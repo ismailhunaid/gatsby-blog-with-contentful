@@ -1,0 +1,10 @@
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background-color:rgb(207, 207, 245) ;  
+    height: 50px;
+    align-items: center;
+    margin-bottom:20px;
+    
+}
