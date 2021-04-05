@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import {graphql,useStaticQuery} from 'gatsby'
+import Head from '../components/Head'
 
 function Contact() {
  // syntax of static Query is     const data = useStaticQuery(graphql``)
@@ -21,6 +22,7 @@ function Contact() {
     return (
         
         <Layout>
+          <Head title="contact"/>
           <h2>CONTACT US PAGE </h2>
           <h2>  {data.site.siteMetadata.title}   </h2>
 

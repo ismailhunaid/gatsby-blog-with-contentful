@@ -12,6 +12,7 @@ import Footer from '../components/Footer'
 import {graphql} from 'gatsby'
 import * as styles from './huffazTemplate.module.css'
 import {documentToReactComponents } from '@contentful/rich-text-react-renderer'
+import Head from '../components/Head'
 
 export const query = graphql`
 query ($slug:String!){
@@ -44,6 +45,7 @@ function huffazTemplate(props) {
     console.log(props)
     return (
         <div>
+          <Head title={props.data.contentfulHuffaz.name}/>
             <Header />
             <NavBar />
             <div className={styles.main}>

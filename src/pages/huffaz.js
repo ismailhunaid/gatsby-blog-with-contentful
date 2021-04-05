@@ -3,6 +3,7 @@ import Layout from '../components/Layout'
 import { Card, CardContent} from '@material-ui/core';
 import * as styles from './huffaz.module.css'
 import { graphql, useStaticQuery ,Link} from 'gatsby'
+import Head from '../components/Head'
 
 
 const Huffaz = () => {
@@ -32,6 +33,7 @@ const Huffaz = () => {
 
   return (
     <Layout>
+      <Head title="Huffaz-Stories"/>
       <div className={styles.card}>
         {data.allContentfulHuffaz.edges.map((edge) => {
           return (
