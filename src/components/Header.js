@@ -7,7 +7,7 @@ function Header() {
     
     <header>
         <h1>
-            <Typography>
+            <Typography variant="h3">
                 Inspirational Stories of Huffaz Kiraam 
             </Typography>
         </h1>
